@@ -1,0 +1,8 @@
+<div class="car-card" tabindex="0">
+  <div class="car-card__info">
+    <img class="car-card__icon" [src]="carInfo.icon" />
+    <img class="car-card__image" [src]="carInfo.image" />
+    <span class="car-card__fuel color-gray">{{ carInfo.fuel }}</span>
+  </div>
+  <user-activity [userActivity]="carInfo.userActivity"></user-activity>
+</div>

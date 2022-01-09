@@ -1,0 +1,26 @@
+$hover-color: #e4663e;
+$gray-color: #aaa2a2;
+
+.text-center {
+  text-align: center;
+}
+
+.background-color {
+  &-hover {
+    background-color: $hover-color;
+  }
+
+  &-gray {
+    background-color: $gray-color;
+  }
+}
+
+.color {
+  &-hover {
+    color: $hover-color;
+  }
+
+  &-gray {
+    color: $gray-color;
+  }
+}

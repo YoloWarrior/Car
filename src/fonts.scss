@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat/Montserrat-SemiBold.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/Montserrat/Montserrat-Bold.ttf');
+  font-weight: 700;
+}
+
+$font-family: Montserrat;
+
+@mixin montserrat-bold {
+  font-family: $font-family;
+  font-weight: 700;
+}
+
+@mixin montserrat-semiBold {
+  font-family: $font-family;
+  font-weight: 600;
+}
+
+.font {
+  &-bold {
+    @include montserrat-bold;
+  }
+}

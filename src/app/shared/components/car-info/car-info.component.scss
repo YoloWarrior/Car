@@ -1,0 +1,49 @@
+@import 'fonts';
+
+.car-info {
+  height: 400px;
+  margin: 0 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 20px;
+  border-radius: 15px;
+
+  &__main {
+    display: flex;
+  }
+
+  &__status {
+    margin-right: calc(100% - 600px);
+  }
+  &__sub {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__specifications {
+    display: flex;
+  }
+
+  &__title {
+    padding: 70px 0 0 40px;
+    width: 37%;
+    font-size: 3.5vmax;
+    margin-right: 86px;
+  }
+
+  &__icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  &__image {
+    height: 291px;
+    width: 612px;
+  }
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+}

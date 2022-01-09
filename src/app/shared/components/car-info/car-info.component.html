@@ -1,0 +1,36 @@
+<div class="car-info" tabindex="0">
+  <div class="car-info__main">
+    <img class="car-info__icon" [src]="carInfo.icon" />
+    <p class="car-info__title font-bold">{{ carInfo.title }}</p>
+    <img class="car-info__image" [src]="carInfo.image" />
+  </div>
+
+  <div class="car-info__sub">
+    <div class="car-info__status"></div>
+    <div class="car-info__specifications">
+      <div class="line">
+        <icon-text
+          [icon]="icons.ROADMAP"
+          [size]="30"
+          text="{{ carInfo.mileage }} KM"
+        ></icon-text>
+        <icon-text
+          [icon]="icons.TRANSMISSION"
+          [size]="30"
+          [text]="carInfo.transmission"
+        ></icon-text>
+      </div>
+
+      <div class="line">
+        <icon-text
+          [icon]="icons.PIN"
+          [size]="30"
+          [text]="carInfo.country"
+        ></icon-text>
+        <icon-text [icon]="icons.FUEL" [size]="30" [text]="1313"></icon-text>
+      </div>
+    </div>
+
+    <user-activity [userActivity]="carInfo.userActivity"></user-activity>
+  </div>
+</div>

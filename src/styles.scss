@@ -1,0 +1,96 @@
+@import 'vars';
+@import 'fonts';
+
+body {
+  font-family: 'Montserrat';
+  background-color: #c1bfc1;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 830px) {
+  .car-info__image {
+    width: calc(100% - 465px) !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-info__main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .car-info__title {
+    width: 82% !important;
+    margin-left: 69px;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    font-size: 30px !important;
+  }
+
+  .car-info__image {
+    width: calc(100% - 371px) !important;
+  }
+
+  .car-card {
+    width: 42.5vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .car-info__icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .car-card {
+    width: 93vw;
+    margin: 20px 10px 20px 14px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .car-card {
+    width: 89vw;
+    margin: 20px 10px 20px 14px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .car-info__title {
+    margin: 0 !important;
+    text-align: center;
+    font-size: 23px !important;
+    height: 56px;
+  }
+
+  .car-info__icon {
+    display: none;
+  }
+
+  .car-info__image {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .car-info__sub {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .icon-text__icon {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .user-activity__title {
+    font-size: 16px !important;
+  }
+
+  .user-activity__value {
+    font-size: 14px !important;
+  }
+}

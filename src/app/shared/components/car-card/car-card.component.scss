@@ -1,0 +1,28 @@
+.car-card {
+  height: 150px;
+  margin: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 10px 10px;
+  border-radius: 15px;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  &__image {
+    height: 107px;
+    width: 200px;
+  }
+
+  &__fuel {
+    width: 56px;
+  }
+}

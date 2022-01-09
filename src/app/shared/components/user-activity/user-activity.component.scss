@@ -1,0 +1,16 @@
+.user-activity {
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 3px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+}

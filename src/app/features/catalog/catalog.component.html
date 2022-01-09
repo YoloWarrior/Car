@@ -1,0 +1,13 @@
+<div class="container" style="overflow: hidden">
+  <virtual-scroll
+    [borderRadius]="20"
+    [fill]="true"
+    (itemChanged)="selectedItem = $event"
+  >
+    <div class="car-scroller">
+      <car-card *ngFor="let item of cars" [carInfo]="item"></car-card>
+    </div>
+  </virtual-scroll>
+
+  <car-info *ngIf="cars" [carInfo]="cars[selectedItem]"></car-info>
+</div>

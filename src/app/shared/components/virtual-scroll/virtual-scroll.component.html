@@ -1,0 +1,27 @@
+<div class="wrapper">
+  <div #container class="view">
+    <ng-content></ng-content>
+  </div>
+  <div
+    class="focus-outline"
+    [class.focus-outline--fill]="fill"
+    [class.focus-outline--no-border]="!borderVisibilty"
+    [class.focus-outline--fill-border]="fillWithBorder"
+    *ngIf="focusPosition && staticFocus"
+    [style.top.px]="focusPosition?.top"
+    [style.left.px]="focusPosition?.left"
+    [style.width.px]="focusPosition?.width"
+    [style.height.px]="focusPosition?.height"
+    [style.transition-duration.s]="duration"
+    [style.border-radius.px]="borderRadius"
+    [style.border-width.px]="borderWidth"
+  ></div>
+
+  <div class="arrow arrow-left" (click)="focusIn(currentElement - 1)">
+    <img class="arrow__img" src="assets/images/icons/arrow.svg" alt="" />
+  </div>
+
+  <div class="arrow arrow-right" (click)="focusIn(currentElement + 1)">
+    <img class="arrow__img" src="assets/images/icons/arrow.svg" alt="" />
+  </div>
+</div>

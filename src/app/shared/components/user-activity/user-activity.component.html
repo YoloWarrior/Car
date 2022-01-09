@@ -1,0 +1,9 @@
+<div class="user-activity">
+  <div
+    class="user-activity__item text-center"
+    *ngFor="let item of userActivity | keyvalue"
+  >
+    <span class="user-activity__title color-gray">{{ item.key }}</span>
+    <span class="font-bold user-activity__value">{{ item.value }} k</span>
+  </div>
+</div>
